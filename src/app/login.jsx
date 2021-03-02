@@ -1,4 +1,3 @@
-import firebase from "firebase/app"
 import firebaseApp from "gatsby-plugin-firebase"
 import React from 'react'
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
@@ -8,17 +7,16 @@ import Title from "../components/Title"
 import { setUser } from "../utils/auth"
 
 const Login = () => {
-
   const uiConfig = {
     signInFlow: "popup",
     signInOptions: [
       // Leave the lines as is for the providers you want to offer your users.
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-      firebase.auth.GithubAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID,
-      // firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+      firebaseApp.auth.GoogleAuthProvider.PROVIDER_ID,
+      // firebaseApp.auth.FacebookAuthProvider.PROVIDER_ID,
+      firebaseApp.auth.TwitterAuthProvider.PROVIDER_ID,
+      firebaseApp.auth.GithubAuthProvider.PROVIDER_ID,
+      firebaseApp.auth.EmailAuthProvider.PROVIDER_ID,
+      // firebaseApp.auth.PhoneAuthProvider.PROVIDER_ID,
     ],
     callbacks: {
       signInSuccessWithAuthResult: function (authResult, redirectUrl) {
@@ -35,7 +33,7 @@ const Login = () => {
     // Privacy policy url.
     privacyPolicyUrl: "https://www.google.com",
   }
-  
+
   return (
     <>
       <SEO title="Your Profile" />
