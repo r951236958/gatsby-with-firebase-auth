@@ -115,7 +115,11 @@ function GoogleSheets() {
 
   return (
     <>
-      <div>{JSON.stringify(data)}</div>
+      <div>
+        <pre className="language-json">
+          <code>{JSON.stringify(data)}</code>
+        </pre>
+      </div>
       <div className="flex items-center justify-center mx-auto w-full">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6} component={Paper} elevation={6} square>

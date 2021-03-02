@@ -1,0 +1,12 @@
+{
+  "name": "googleSheets",
+  "version": "1.0.0",
+  "main": "googleSheets.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "googleapis": "^67.1.1",
+    "qs": "^6.9.6"
+  }
+}
