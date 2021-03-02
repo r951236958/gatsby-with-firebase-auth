@@ -6,6 +6,8 @@ import { useToggle } from '@react-md/utils'
 import { AppBar, AppBarNav, AppBarTitle, AppBarAction } from '@react-md/app-bar'
 import { DropdownMenu } from '@react-md/menu'
 import { menuItems } from './menuItems'
+import { isLoggedIn } from '../../utils/auth'
+import UserProfile from '../UserProfile'
 
 const Header = ({ siteTitle, menuLinks }) => {
   const [visible, show, hide] = useToggle(false)
@@ -33,7 +35,9 @@ const Header = ({ siteTitle, menuLinks }) => {
           </svg>
         </AppBarNav>
         <AppBarTitle id="app-bar-title" className="rmd-typography--capitalize">
-          {siteTitle}
+          <Link color="inherit" to="/">
+            {siteTitle}
+          </Link>
         </AppBarTitle>
         <AppBarAction id="app-bar-search" first aria-label="Search">
           <svg
@@ -46,6 +50,7 @@ const Header = ({ siteTitle, menuLinks }) => {
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
         </AppBarAction>
+        {isLoggedIn() && <UserProfile />}
         <DropdownMenu
           items={menuItems}
           buttonType="icon"

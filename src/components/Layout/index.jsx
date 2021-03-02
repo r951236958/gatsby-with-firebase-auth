@@ -1,14 +1,13 @@
-import Container from "@material-ui/core/Container"
+import Container from '@material-ui/core/Container'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import { ThemeProvider } from "@material-ui/core/styles"
+import { ThemeProvider } from '@material-ui/core/styles'
 import { graphql, useStaticQuery } from 'gatsby'
-import Prism from "prismjs"
-import React, { useEffect } from "react"
-import Footer from "../Footer"
+import Prism from 'prismjs'
+import React, { useEffect } from 'react'
+import Footer from '../Footer'
 import Header from '../Header'
 import theme from '../theme'
-import Title from "../Title"
-
+import Title from '../Title'
 
 const Layout = ({ children, siteTitle }) => {
   const data = useStaticQuery(graphql`
@@ -33,7 +32,7 @@ const Layout = ({ children, siteTitle }) => {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+        <div className="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
           <Header
             menuLinks={data.site.siteMetadata.menuLinks}
             siteTitle={data.site.siteMetadata.title}
@@ -45,8 +44,8 @@ const Layout = ({ children, siteTitle }) => {
                 <Container maxWidth="lg">{children}</Container>
               </div>
             </main>
-            <Footer />
           </div>
+          <Footer />
         </div>
       </ThemeProvider>
     </>

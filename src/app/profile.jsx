@@ -1,13 +1,13 @@
-import React from "react"
-import SEO from "../components/SEO"
-import { getUser } from "../utils/auth"
+import React from 'react'
+import SEO from '../components/SEO'
+import { getUser } from '../utils/auth'
 
 const Profile = () => {
   const user = getUser()
   const { displayName, email, emailVerified } = user
   const accessToken = user.stsTokenManager.accessToken
-  const siteTitle = "Your Profile"
-  
+  const siteTitle = 'Your Profile'
+
   return (
     <>
       <SEO title={siteTitle} />
@@ -28,27 +28,19 @@ const Profile = () => {
         <div className="text-gray-300 text-base">
           <ul>
             <li>
-              <div className="text-xl font-bold">
-                Name:
-              </div>
+              <div className="text-xl font-bold">Name:</div>
               <div className="pl-2 ">{`${displayName}`}</div>
             </li>
             <li>
-              <div className="text-xl font-bold">
-                Email:
-              </div>
+              <div className="text-xl font-bold">Email:</div>
               <div className="pl-2 ">{`${email}`}</div>
             </li>
             <li>
-              <div className="text-xl font-bold">
-                Email Verified:
-              </div>
+              <div className="text-xl font-bold">Email Verified:</div>
               <div className="pl-2 ">{`${emailVerified}`}</div>
             </li>
             <li>
-              <div className="text-xl font-bold">
-                Firebase Access Token:
-              </div>
+              <div className="text-xl font-bold">Firebase Access Token:</div>
               <div className="pl-2 truncate">{`${accessToken}`}</div>
             </li>
           </ul>

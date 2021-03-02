@@ -6,8 +6,8 @@ import Paper from '@material-ui/core/Paper'
 import { makeStyles } from '@material-ui/core/styles'
 // import TextField from '@material-ui/core/TextField'
 import Typography from '@material-ui/core/Typography'
-import { navigate } from "@reach/router"
-import axios from "axios"
+import { navigate } from '@reach/router'
+import axios from 'axios'
 import React, { useState } from 'react'
 import TextField from '../TextField'
 
@@ -100,7 +100,7 @@ function GoogleSheets() {
   )
 
   return (
-    <div className="flex items-center justify-center mx-auto w-1/2">
+    <div className="flex items-center justify-center mx-auto w-full">
       <Grid container spacing={2}>
         <Grid item xs={12} md={6} component={Paper} elevation={6} square>
           <div className={classes.paper}>

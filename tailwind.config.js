@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    enabled: true, // 開發環境預設關閉，NODE_ENV設置production時啟用
+    // enabled: true, // 開發環境預設關閉，NODE_ENV設置production時啟用
     // preserveHtmlElements: false, // 保留HTML元素，預設true，如需禁用此功能設置為false
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
   },
@@ -14,7 +14,7 @@ module.exports = {
         '-0.05': '-0.05rem',
       },
       transformOrigin: {
-        '0': '0%',
+        0: '0%',
       },
       zIndex: {
         '-1': '-1',
@@ -47,16 +47,16 @@ module.exports = {
       purple: colors.violet,
       pink: colors.pink,
       darkBlue: {
-        '50': '#f4f7fa',
-        '100': '#eaf0f4',
-        '200': '#c9d9e4',
-        '300': '#a9c2d4',
-        '400': '#6994b4',
-        '500': '#286694',
-        '600': '#245c85',
-        '700': '#1e4d6f',
-        '800': '#183d59',
-        '900': '#143249',
+        50: '#f4f7fa',
+        100: '#eaf0f4',
+        200: '#c9d9e4',
+        300: '#a9c2d4',
+        400: '#6994b4',
+        500: '#286694',
+        600: '#245c85',
+        700: '#1e4d6f',
+        800: '#183d59',
+        900: '#143249',
       },
     },
     spacing: {
@@ -96,7 +96,7 @@ module.exports = {
       80: '20rem',
       96: '24rem',
     },
-    backgroundColor: theme => theme('colors'),
+    backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
       none: 'none',
       'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
@@ -112,7 +112,7 @@ module.exports = {
       'gradient-to-tl':
         'linear-gradient(to top left, var(--tw-gradient-stops))',
     },
-    backgroundOpacity: theme => theme('opacity'),
+    backgroundOpacity: (theme) => theme('opacity'),
     backgroundPosition: {
       bottom: 'bottom',
       center: 'center',
@@ -129,11 +129,11 @@ module.exports = {
       cover: 'cover',
       contain: 'contain',
     },
-    borderColor: theme => ({
+    borderColor: (theme) => ({
       ...theme('colors'),
       DEFAULT: theme('colors.gray.200', 'currentColor'),
     }),
-    borderOpacity: theme => theme('opacity'),
+    borderOpacity: (theme) => theme('opacity'),
     borderRadius: {
       none: '0px',
       sm: '0.125rem',
@@ -176,9 +176,9 @@ module.exports = {
       move: 'move',
       'not-allowed': 'not-allowed',
     },
-    divideColor: theme => theme('borderColor'),
-    divideOpacity: theme => theme('borderOpacity'),
-    divideWidth: theme => theme('borderWidth'),
+    divideColor: (theme) => theme('borderColor'),
+    divideOpacity: (theme) => theme('borderOpacity'),
+    divideWidth: (theme) => theme('borderWidth'),
     fill: { current: 'currentColor' },
     flex: {
       1: '1 1 0%',
@@ -256,8 +256,8 @@ module.exports = {
       extrabold: '800',
       black: '900',
     },
-    gap: theme => theme('spacing'),
-    gradientColorStops: theme => theme('colors'),
+    gap: (theme) => theme('spacing'),
+    gradientColorStops: (theme) => theme('colors'),
     gridAutoColumns: {
       auto: 'auto',
       min: 'min-content',
@@ -383,7 +383,7 @@ module.exports = {
       5: 'repeat(5, minmax(0, 1fr))',
       6: 'repeat(6, minmax(0, 1fr))',
     },
-    height: theme => ({
+    height: (theme) => ({
       auto: 'auto',
       ...theme('spacing'),
       '1/2': '50%',
@@ -485,7 +485,7 @@ module.exports = {
       ...theme('spacing'),
       ...negative(theme('spacing')),
     }),
-    maxHeight: theme => ({
+    maxHeight: (theme) => ({
       ...theme('spacing'),
       full: '100%',
       screen: '100vh',
@@ -571,9 +571,9 @@ module.exports = {
       white: ['2px dotted white', '2px'],
       black: ['2px dotted black', '2px'],
     },
-    padding: theme => theme('spacing'),
-    placeholderColor: theme => theme('colors'),
-    placeholderOpacity: theme => theme('opacity'),
+    padding: (theme) => theme('spacing'),
+    placeholderColor: (theme) => theme('colors'),
+    placeholderOpacity: (theme) => theme('opacity'),
     stroke: {
       current: 'currentColor',
     },
@@ -582,8 +582,8 @@ module.exports = {
       1: '1',
       2: '2',
     },
-    textColor: theme => theme('colors'),
-    textOpacity: theme => theme('opacity'),
+    textColor: (theme) => theme('colors'),
+    textOpacity: (theme) => theme('opacity'),
     transitionDuration: {
       DEFAULT: '150ms',
       75: '75ms',
@@ -640,7 +640,7 @@ module.exports = {
       '-3/4': '-75%',
       '-full': '-100%',
     }),
-    width: theme => ({
+    width: (theme) => ({
       auto: 'auto',
       ...theme('spacing'),
       '1/2': '50%',

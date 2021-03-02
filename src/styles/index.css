@@ -8,9 +8,14 @@
 
 @import 'global.css';
 @import 'components/textfield.css';
+@import 'components/userprofile.css';
 
-p {
-  margin-bottom: 1.5rem;
+main {
+  min-height: 100vh;
+}
+
+footer {
+  margin: 0 auto auto;
 }
 
 .btn {

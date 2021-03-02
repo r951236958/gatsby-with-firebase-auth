@@ -13,32 +13,20 @@ module.exports = {
         link: '/',
       },
       {
-        name: 'About',
-        link: '/about/',
+        name: 'Form',
+        link: '/form/',
       },
       {
         name: 'App',
         link: '/app/',
       },
       {
-        name: 'Page2',
-        link: '/page-2/',
-      },
-      {
-        name: 'Example',
-        link: '/example/',
+        name: 'About',
+        link: '/about/',
       },
       {
         name: 'Links',
         link: '/links/',
-      },
-      {
-        name: 'Form',
-        link: '/form/',
-      },
-      {
-        name: 'Test',
-        link: '/test/',
       },
     ],
   },
