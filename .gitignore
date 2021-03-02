@@ -3,6 +3,8 @@
 logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Runtime data
 pids
@@ -62,3 +64,36 @@ bundle-stats.json
 .env.*
 .env
 !.env.sample
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Typescript v1 declaration files
+typings
+
+# gatsby files
+.cache/
+public
+
+# Mac files
+.DS_Store
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Yarn Integrity file
+.yarn-integrity
+
+# netlify files
+.netlify
+
+# GitHub files
+.github/
+
+# key files
+serviceAccountKey.*
+
+# vs code files
+.vscode/

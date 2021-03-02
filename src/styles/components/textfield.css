@@ -1,0 +1,59 @@
+.outline-textfield {
+  @apply relative my-4 border-2 border-gray-400 rounded-md focus-within:border-blue-500;
+}
+
+.outline-textfield input {
+  @apply block p-2 w-full text-lg appearance-none focus:outline-none bg-transparent;
+}
+
+.outline-textfield input::placeholder {
+  @apply text-gray-400;
+}
+
+.outline-textfield label {
+  @apply absolute top-0 text-lg p-4 -z-1 focus-within:bg-gray-700 duration-300 origin-0;
+}
+
+.outline-textfield input:focus,
+.outline-textfield input:not(:placeholder-shown) {
+  @apply border-blue-500 outline-none shadow-sm;
+}
+
+.outline-textfield input:focus-within ~ label {
+  @apply text-blue-500 bg-gray-700;
+}
+
+.outline-textfield input:focus-within ~ label,
+.outline-textfield input:not(:placeholder-shown) ~ label {
+  @apply text-blue-500 bg-gray-700 transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
+}
+
+.floating-input {
+  @apply my-4 relative rounded-md border-2 border-gray-400 border-opacity-70 focus-within:border-blue-500;
+}
+
+.floating-input > input {
+  @apply block w-full p-4 appearance-none placeholder-gray-400 focus:outline-none bg-transparent;
+}
+
+.floating-input > label {
+  @apply absolute top-0 left-0 p-4 -z-1 h-full text-lg focus:text-blue-500 focus:bg-gray-700 pointer-events-none transform origin-top-left transition-all duration-300 ease-in-out;
+}
+
+.floating-input > input::placeholder {
+  @apply text-gray-400;
+}
+
+/* .floating-input > input:focus,
+.floating-input > input:not(:placeholder-shown) {
+  @apply pt-8;
+} */
+
+.floating-input > input:focus-within ~ label,
+.floating-input > input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
+}
+
+.floating-input > input:focus-within ~ label {
+  @apply text-blue-500 bg-gray-700;
+}

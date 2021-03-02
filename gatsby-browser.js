@@ -1,3 +1,9 @@
-import "firebase/auth"
-import "firebase/firestore"
-import "firebase/functions"
+import 'firebase/auth'
+import 'firebase/firestore'
+import 'firebase/functions'
+import 'prismjs/themes/prism-okaidia.css'
+import './src/styles/index.css'
+import './src/styles/global.scss'
+// import './static/dist/css/tailwind.css'
+import '@reach/dialog/styles.css'
+import 'firebaseui/dist/firebaseui.css'

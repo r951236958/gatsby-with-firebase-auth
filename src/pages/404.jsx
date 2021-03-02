@@ -1,13 +1,16 @@
-import React from "react"
-import Layout from "../components/Layout"
-import View from "../components/View"
+import React from 'react'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
-const NotFound = () => (
-  <Layout>
-    <View title="Not Found">
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </View>
-  </Layout>
-)
+const NotFound = () => {
+  const title = 'Page Not Found'
+  return (
+    <Layout siteTitle={title}>
+      <SEO title={title}>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      </SEO>
+    </Layout>
+  )
+}
 
 export default NotFound
