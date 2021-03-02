@@ -1,16 +1,17 @@
 import React from 'react'
-import { getUser, isLoggedIn } from '../utils/auth'
-import Title from '../components/Title'
+// import Title from '../components/Title'
 import P from '../components/P'
+import SEO from "../components/SEO"
+import { getUser, isLoggedIn } from "../utils/auth"
 
 function Main() {
   const user = getUser()
   const { displayName, email, photoURL } = user
   // const accessToken = user.stsTokenManager.accessToken
-
+  const siteTitle = "Your Main App"
   return (
     <>
-      <Title>Your Main App</Title>
+      <SEO title={siteTitle} />
       <ul>
         <li>
           <P>Name: {displayName}</P>
