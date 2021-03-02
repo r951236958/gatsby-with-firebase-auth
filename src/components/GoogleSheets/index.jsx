@@ -6,8 +6,8 @@ import Paper from '@material-ui/core/Paper'
 import { makeStyles } from '@material-ui/core/styles'
 // import TextField from '@material-ui/core/TextField'
 import Typography from '@material-ui/core/Typography'
-import axios from 'axios'
-import { navigate } from 'gatsby'
+import { navigate } from "@reach/router"
+import axios from "axios"
 import React, { useState } from 'react'
 import TextField from '../TextField'
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { navigate } from 'gatsby'
+// import { navigate } from '@reach/router'
 import { getUser, isLoggedIn } from '../../utils/auth'
 // import firebase from 'gatsby-plugin-firebase'
 

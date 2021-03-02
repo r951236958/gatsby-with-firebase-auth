@@ -1,11 +1,10 @@
-import { Transition } from '@headlessui/react'
-import { navigate } from 'gatsby'
+import { navigate } from "@reach/router"
+import VisuallyHidden from "@reach/visually-hidden"
+import firebase from "gatsby-plugin-firebase"
 import { Link } from 'gatsby-theme-material-ui'
 import PropTypes from 'prop-types'
-import React, { useState, useEffect } from 'react'
-import { getUser, isLoggedIn, logout } from '../../utils/auth'
-import firebase from 'gatsby-plugin-firebase'
-import VisuallyHidden from '@reach/visually-hidden'
+import React, { useEffect, useState } from "react"
+import { getUser, isLoggedIn, logout } from "../../utils/auth"
 
 export default function TopBar({ menuLinks }) {
   const [isOpen, setIsOpen] = useState(false)

@@ -1,8 +1,9 @@
-import { Link, navigate } from 'gatsby'
+import { navigate } from "@reach/router"
+import firebase from "gatsby-plugin-firebase"
+import { Link } from "gatsby-theme-material-ui"
 import React from 'react'
 import StatusAlert from '../../components/StatusAlert'
-import { logout, isLoggedIn } from '../../utils/auth'
-import firebase from 'gatsby-plugin-firebase'
+import { isLoggedIn, logout } from "../../utils/auth"
 
 const NavBar = () => {
   // const { isLoggedIn, logoutUser } = useIdentityContext()

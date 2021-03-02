@@ -1,7 +1,7 @@
 import firebaseApp from "gatsby-plugin-firebase"
 import React from 'react'
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
-// import { navigate } from 'gatsby'
+// import { navigate } from "@reach/router"
 import SEO from '../components/SEO'
 import Title from "../components/Title"
 import { setUser } from "../utils/auth"
