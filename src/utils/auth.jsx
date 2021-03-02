@@ -1,4 +1,18 @@
-import firebase from 'firebase/app'
+import firebase from "gatsby-plugin-firebase"
+
+// const googleProvider = new firebase.auth.GoogleAuthProvider()
+
+// export const signInWithGoogle = () => {
+//   firebase
+//     .auth()
+//     .signInWithPopup(googleProvider)
+//     .then((res) => {
+//       console.log(res.user)
+//     })
+//     .catch((error) => {
+//       console.log(error.message)
+//     })
+// }
 
 export const isBrowser = () => typeof window !== 'undefined'
 
