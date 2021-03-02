@@ -4,10 +4,16 @@ const NetlifyForm = () => {
   return (
     <div className="mt-5 md:mt-0 md:col-span-2">
       <h2 className="text-center">Contact Form</h2>
-      <form name="Contact Form" method="post" data-netlify="true">
+      <form
+        name="Contact Form"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <div className="shadow-xl w-3xl md:max-w-2xl overflow-hidden mx-auto rounded-lg">
           <div className="px-4 py-5 bg-white dark:bg-paper-500 sm:p-6">
             <div className="grid grid-cols-6 gap-6">
+              <input type="hidden" name="form-name" value="Contact Form" />
               <div className="col-span-6 sm:col-span-3 focus-within:text-cyan-500">
                 <label
                   htmlFor="first_name"
