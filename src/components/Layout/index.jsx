@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
-import Prism from 'prismjs'
-import { ThemeProvider } from '@material-ui/core/styles'
-import Container from '@material-ui/core/Container'
+import Container from "@material-ui/core/Container"
 import CssBaseline from '@material-ui/core/CssBaseline'
+import { ThemeProvider } from "@material-ui/core/styles"
 import { graphql, useStaticQuery } from 'gatsby'
-
-import Title from '../Title'
+import Prism from "prismjs"
+import React, { useEffect } from "react"
+import Footer from "../Footer"
 import Header from '../Header'
 import theme from '../theme'
-import Footer from '../Footer'
+import Title from "../Title"
+
 
 const Layout = ({ children, siteTitle }) => {
   const data = useStaticQuery(graphql`
