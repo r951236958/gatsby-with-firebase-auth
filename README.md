@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/r951236958/gatsby-with-firebase-auth)
+
 <div align="center">
     <img src="static/gatsby-firebase-logo.png" alt="Logo" width='70%' height='auto'/>
 </div>
